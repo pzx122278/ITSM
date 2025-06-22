@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'python:3.13.5-alpine3.22' } }
+    agent any
     stages {
         stage('build') {
             steps {
-                sh 'py --version'
+                echo 'Hello world'
             }
         }
     }
